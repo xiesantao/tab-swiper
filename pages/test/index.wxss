@@ -1,0 +1,53 @@
+.tabClass{
+  height:50rpx;
+  line-height:50rpx;
+  font-size:30rpx;
+  padding:0 30rpx;
+  margin-left:30rpx;
+  color:#333;
+  border-bottom-width:none!important;
+  border-bottom-style:none!important;
+}
+.scrollViewClass{
+  height:50rpx;
+  border-bottom:1px solid #ccc;
+  padding-bottom:10rpx;
+  position:fixed;
+  left:0;
+  top:0;
+  right:0;
+  z-index:100;
+}
+.activeClass{
+  color:#fff;
+  background-color: #0081cc;
+  border-radius:20rpx;
+}
+.tabClass:last-of-type{
+  margin-right:30rpx;
+}
+.swiperClass{
+  margin-top:61rpx;
+  height:calc(100vh - 61rpx);
+}
+.contentBox{
+  margin-top:61rox;
+  height:calc(100vh - 61rpx);
+  padding-top:30rpx;
+  box-sizing:border-box;
+}
+.contentBox .item{
+  margin:0 20rpx 30rpx;
+  display:block;
+  height:60rpx;
+  line-height:60rpx;
+  text-align:center;
+  background-color: #0081cc;
+  color:#fff;
+  border-radius:6rpx;
+}
+.contentBox .nodata{
+  margin:100rpx auto;
+  display:block;
+  width:300rpx;
+}

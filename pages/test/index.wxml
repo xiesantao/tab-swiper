@@ -1,0 +1,29 @@
+<swiper-tabs 
+    bind:tabclick="tabclick"
+    bind:swiperChange="swiperChange"
+    bind:bindscrolltolower="bindscrolltolower"
+    bind:bindrefresherrefresh="bindrefresherrefresh"
+    refresherTriggered="{{refresherTriggered}}"
+    tabs="{{tabs}}"
+    tabClass="tabClass"
+    scrollViewClass="scrollViewClass"
+    swiperClass="swiperClass"
+    activeClass="activeClass"
+    tabUnderlineColor="tabUnderlineColor"
+    tabActiveTextColor="tabActiveTextColor"
+    tabInactiveTextColor="tabInactiveTextColor"
+    tabBackgroundColor="tabBackgroundColor"
+    activeTab="{{activeTab}}"
+    duration="{{300}}"
+>
+<block wx:for="{{tabs}}" wx:for-index="index" wx:key="title">
+    <view class="contentBox"  slot="tab-content-{{index}}">
+      <view class="totalList" wx:if="{{list.length && activeTab==index}}">
+        <view class="item" wx:for="{{list}}" wx:for-item="item2" wx:key="item2">
+          {{item.title+":"+(item2+1)}}
+        </view>
+      </view>
+      <image wx:else class="nodata" mode="widthFix" src="/assets/images/noData.png"></image>
+    </view>
+  </block>
+</swiper-tabs>

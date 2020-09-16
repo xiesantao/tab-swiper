@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "swiperTabs",
+    "usingComponents": {
+        "swiper-tabs": "../../components/swiperTabs/index"
+    }
+}

@@ -1,0 +1,8 @@
+<!-- 自定义顶部栏 -->
+<view class="bottom-bar" wx:if="{{show}}">
+  <view class="bottom-box" wx:for="{{list}}" wx:key="index" data-path="{{item.pagePath}}" data-index="{{index}}" bindtap="tabChange">
+    <image class="image" wx:if="{{selected != index}}" src="{{item.iconPath}}"></image>
+    <image class="image" wx:if="{{selected == index}}" src="{{item.selectedIconPath}}"></image>
+    <view class="text {{selected == index?'active':''}}">{{item.text}}</view>
+  </view>
+</view>
